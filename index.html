@@ -1,0 +1,25 @@
+<head>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!-- Fonts Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="numberpicker.css">
+</head>
+
+<div id="numberPickerWrap">
+	<p>1</p>
+	<div class="numpicker-nav">
+		<button data-toggle="decrease"><i class="fas fa-caret-left"></i></button>
+		<button data-toggle="increase"><i class="fas fa-caret-right"></i></button>
+	</div>
+</div>
+
+<script src="numberpicker.js"></script>
+<script>
+	var numberPicker = new NumberPicker({
+		element_id: 'numberPickerWrap', // Unique ID of the element
+		max: 10, // Max number allowed, -1 is infinite
+		min: 1 // Minimum number allowed
+	})
+</script>
